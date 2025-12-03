@@ -1,0 +1,33 @@
+Variables: 
+!<INPUT 0>! -- Persona name 
+!<INPUT 1>! -- Persona living sector 
+!<INPUT 2>! -- Persona living sector arenas 
+!<INPUT 3>! -- Persona name 
+!<INPUT 4>! -- Persona current sector 
+!<INPUT 5>! -- Persona current sector arenas 
+!<INPUT 6>! -- Daily plan / background blurb 
+!<INPUT 7>! -- Area options 
+!<INPUT 8>! -- Persona name 
+!<INPUT 9>! -- Current action 
+!<INPUT 10>! -- Sub-action 
+!<INPUT 11>! -- Persona name
+<commentblockmarker>###</commentblockmarker>
+This is a classification task -- choose an appropriate area from the area options for a task at hand.
+
+Classification Task: !<INPUT 8>! is !<INPUT 10>! as a part of !<INPUT 9>!. Pick one of the choices given in the Area options that !<INPUT 11>! should go to.
+
+!<INPUT 3>! is currently in {!<INPUT 4>!} that has ONLY !<INPUT 5>!. !<INPUT 6>!
+
+Follow these rules strictly, in this order:
+
+1. If the description of the current action or sub-action (the text "!<INPUT 9>!" or "!<INPUT 10>!") explicitly contains the exact name of one of the areas listed in the Area Options (for example, "Hobbs Cafe"), you MUST choose exactly that area as the answer.
+2. Otherwise, stay in the current area if the activity can be done there.
+3. Only go out to a different area if the activity clearly needs to happen there.
+
+Stay in the current area if the activity can be done there. Only go out if the activity needs to take place in another place.
+
+Area Options Available (Class label): {!<INPUT 7>!}
+
+Answer with exactly one area name, copied verbatim from the Area Options, and nothing else.
+
+ 
