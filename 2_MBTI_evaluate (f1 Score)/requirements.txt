@@ -1,4 +1,0 @@
-pandas
-openai
-tqdm
-scikit-learn
