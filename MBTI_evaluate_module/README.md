@@ -1,4 +1,5 @@
 
+실행 전 utils.py에 API Key 입력 필요
 predict.py 실행 시 result.csv 생성
 analyze.py 실행 시 result.csv 분석
 
